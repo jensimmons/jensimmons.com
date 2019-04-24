@@ -1,0 +1,79 @@
+img {
+	max-width: 100%;
+}
+
+
+.intro {
+	background: #ccc;
+	padding: 2rem;
+}
+
+.layout {
+	background: white;
+	margin: 30px;
+	padding: 0;
+	display: grid;
+	grid-template-columns: min-content auto;
+}
+.layout > h1 {
+	writing-mode: vertical-rl;
+	writing-mode: sideways-lr;
+	grid-row: span 4;
+	margin: 0;
+	font-size: calc(3rem + 1vh + 1vw);
+	text-transform: uppercase;
+	background: black;
+	color: white;
+	line-height: 1;
+	padding-left: 0.08em;
+}
+
+.layout .wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-auto-flow: dense;
+	grid-gap: 10px;
+	background: black;
+	min-height: 95vh;
+}
+.layout .wrapper > * {
+	height: 100%;
+	background: white;
+	padding: 1rem;
+}
+.wrapper > * h2 {
+	margin: 0;
+}
+.presentation-videos {
+	grid-column: span 3;
+	grid-row: span 2;
+}
+.layout-intro {
+	grid-column: span 2;
+}
+.layout-land {
+	grid-column: span 2;
+}
+.layout-writing {
+
+}
+.layout-interviews {
+
+}
+
+
+
+.presentation-videos {
+
+}
+.video-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+}
+.video-list h3 {
+	margin: 0;
+	font-size: 1rem;
+}
+.video-list li {
+}

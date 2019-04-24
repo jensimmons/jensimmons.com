@@ -25,7 +25,7 @@ body {
 }
 
 main {
-	max-width: 37.5em;
+
 }
 
 p,
@@ -42,14 +42,14 @@ a[href]:visited {
 a[href]:not(:hover) {
 	text-decoration: none;
 }
-main a[href]:not(:hover) {
+main p a[href]:not(:hover) {
 	text-decoration: underline;
 }
 
 header,
 main,
 footer {
-	padding: 1em;
+
 }
 
 main {
