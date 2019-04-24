@@ -1,7 +1,9 @@
 :root {
 	--paper: #e4e4d5;
 	--white: white;
-	--link: #d55349;
+	--background: #f5f1ec;
+	--link: #0a7fc6;
+	--text: #33321f;
 }
 
 *, *:before, *:after {
@@ -13,6 +15,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	color: var(--text);
 }
 
 body {
@@ -20,10 +23,11 @@ body {
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
 	background-color: var(--paper);
+	background-color: var(--background);
 }
 
 main {
-	max-width: 37.5em;
+
 }
 
 p,
@@ -40,11 +44,14 @@ a[href]:visited {
 a[href]:not(:hover) {
 	text-decoration: none;
 }
+main p a[href]:not(:hover) {
+	text-decoration: underline;
+}
 
 header,
 main,
 footer {
-	padding: 1em;
+
 }
 
 main {
@@ -76,6 +83,10 @@ pre {
 ul {
 	padding: 0;
 	list-style: none;
+}
+
+svg {
+	fill: currentcolor;
 }
 
 /* Header Logo (style as h2) */
@@ -140,7 +151,7 @@ a[rel="tag"]:visited {
 
 a[rel="tag"]:hover {
 	border: 1px solid var(--link);
-	background-color: var(--blue);
+	background-color: var(--link);
 	color: var(--white);
 }
 
@@ -174,8 +185,8 @@ textarea {
 }
 
 button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
+	border: 1px solid var(--link);
+	background-color: var(--link);
 	color: var(--white);
 	cursor: pointer;
 }
