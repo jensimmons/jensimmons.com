@@ -2,6 +2,74 @@ img {
 	max-width: 100%;
 }
 
+header {
+	display: grid;	
+	grid-template-areas: ". . name";	
+	grid-template-columns: 1fr 1fr max-content;
+	background: #e4e4d5;
+	padding: 2rem;
+}
+
+
+/* Header Logo (style as h2) */
+.name {
+	grid-area: name;
+	display: grid;
+	grid-template-columns: 0.5em repeat(4, 1fr) 0.5em;
+	grid-template-rows: 0.5em repeat(4, auto) 0.5em;
+	font-size: 2em;
+	margin: .67em 0;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+}
+.name::before {
+	grid-column: 2 / 6;
+	grid-row: 2 / 5;
+	border: 8px solid #d55349;
+	content: '';
+}
+.name span:nth-child(1) { /* J */
+	grid-column: 2;
+	grid-row: 1 span 2;
+}
+.name span:nth-child(2) { /* E */
+	grid-column: 3;
+	grid-row: 1;
+}
+.name span:nth-child(3) { /* N */
+	grid-column: 6;
+	grid-row: 1;
+}
+.name span:nth-child(4) { /* S */
+	grid-column: 3;
+	grid-row: 2;
+}
+.name span:nth-child(5) { /* I */
+	grid-column: 4;
+	grid-row: 2;
+}
+.name span:nth-child(6) { /* M */
+	grid-column: 5;
+	grid-row: 3;
+}
+.name span:nth-child(7) { /* M */
+	grid-column: 6;
+	grid-row: 3;
+}
+.name span:nth-child(8) { /* O */
+	grid-column: 1;
+	grid-row: 4;
+}
+.name span:nth-child(9) { /* N */
+	grid-column: 2;
+	grid-row: 4;
+}
+.name span:nth-child(10) { /* S */
+	grid-column: 5;
+	grid-row: 5;
+}
+
 
 .intro {
 	background: #ccc;
@@ -77,3 +145,4 @@ img {
 }
 .video-list li {
 }
+
