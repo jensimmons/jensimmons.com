@@ -53,6 +53,7 @@ section {
 	grid-column: 6 / 7;
 	grid-row: 4 / 6;
 	margin-top: calc(1rem + 2vh);
+	font-size: 1.1rem;
 }
 .red-box {
 
@@ -67,7 +68,6 @@ a {
 	color: black; 
 	text-transform: uppercase; 
 	text-decoration: none; 
-	font-size: 1.3rem;
 	font-weight: 800;
 }
 @media (max-width:900px) {
