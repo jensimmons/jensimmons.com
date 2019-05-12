@@ -1,0 +1,35 @@
+<section>
+	{% for presentation in presentationslist | reverse %}
+		<article{% if presentation.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ presentation.url | url }}">
+					{% if presentation.data.title %}
+						{{ presentation.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3>
+			{% if presentation.data.summary %}
+				<p>
+					{{ presentation.data.summary }}
+				</p>
+			{% endif %}
+			<p>
+				<time datetime="{{ presentation.date | machineDate }}">
+					<small>{{ presentation.date | readableDate }} by {{ metadata.author.name }}</small>
+				</time>
+			</p>
+			{% if presentation.data.tags %}
+				<p>
+					{% for tag in presentation.data.tags %}
+		  			{%- if tag != "presentation" -%}
+		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+		  			{%- endif -%}
+					{% endfor %}
+				</p>
+			{% endif %}
+		</article>
+	{% endfor %}
+</section>
