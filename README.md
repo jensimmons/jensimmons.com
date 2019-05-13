@@ -8,7 +8,7 @@ The personal website of Jen Simmons.
 Built on top of Dan Urbanowicz’ [Eleventy Netlify Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate), for making a static website using the [Eleventy](https://www.11ty.io/) static site generator, with [Netlify CMS](https://www.netlifycms.org/) baked-in, deployed to [Netlify](https://www.netlify.com).
 
 
-## Notes on Making This Thing Go
+## Notes (for Jen) on Making This Thing Go
 
 Navigate to `/admin`, and start editing content.
 
