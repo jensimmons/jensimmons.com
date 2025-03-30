@@ -12,7 +12,7 @@ permalink: /
 <section>
 Hi. I’m Jen Simmons.
 
-I’m a Designer and Developer Advocate at Mozilla and a member of the CSS Working Group. I'm especially interested in the coming revolution in [graphic design on the web](https://labs.jensimmons.com/).
+I’m a web evangelist at Apple. Before that, I was a Web Designer and Developer Advocate at Mozilla. I'm especially interested in the coming revolution in [graphic design on the web](https://labs.jensimmons.com/).
 
 I [speak at conferences](https://talks.jensimmons.com) and [make videos](http://youtube.com/layoutland). From 2011–2015, I was the host and executive producer of [The Web Ahead](http://thewebahead.net). 
 
